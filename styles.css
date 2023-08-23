@@ -1,0 +1,164 @@
+body {
+    background-color: #96aaf7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #faeeee;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+    /*padding: 20px;*/
+}
+
+#company-metadata {
+    width: 100%;
+    /*height: 600px;*/
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    font-family: cursive;  /* Roboto font with a sans-serif fallback */
+    font-weight: 700;  /* This makes the text bold */
+    position: relative;
+    text-align: center;
+    color: #070703;
+    height: 150px;  /* Adjust based on your preference */
+    z-index: 25; /* Ensure text is above the video */
+    display: flex; /* For center alignment */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+}
+
+h1 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.4;  /* Dimming the video */
+}
+
+/*Styling the Company Info panels*/
+.panel-heading {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+.panel-heading h4.panel-title {
+    width: 100%;
+    text-align: center;  /* This centers the text within the h5 element */
+    background-color: #625e6b;  /* This is Bootstrap's primary color; adjust as needed */
+    padding: 8px;  /* Add some padding to make it look better */
+    color: white;  /* Assuming you want the text color to be white against the blue background */
+    border-radius: 4px;  /* Optional: to give rounded corners to the background */
+}
+.panel-primary {
+    border: 2px solid #625e6b;  /* Using Bootstrap's primary color; adjust thickness, style, and color as needed */
+    border-radius: 5px;
+}
+
+/*Styling the Dataset panels*/
+.panel-heading2 {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+.panel-heading2 h4.panel-title2 {
+    width: 100%;
+    text-align: center;  /* This centers the text within the h5 element */
+    background-color: #625e6b;  /* This is Bootstrap's primary color; adjust as needed */
+    padding: 8px;  /* Add some padding to make it look better */
+    color: white;  /* Assuming you want the text color to be white against the blue background */
+    border-radius: 4px;  /* Optional: to give rounded corners to the background */
+}
+.panel-primary {
+    border: 2px solid #625e6b;  /* Using Bootstrap's primary color; adjust thickness, style, and color as needed */
+    border-radius: 5px;
+}
+
+/*Styling the Graphs panels*/
+.panel-heading2 {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+.panel-heading2 h4.panel-title2 {
+    width: 100%;
+    text-align: center;  /* This centers the text within the h5 element */
+    background-color: #625e6b;  /* This is Bootstrap's primary color; adjust as needed */
+    padding: 8px;  /* Add some padding to make it look better */
+    color: white;  /* Assuming you want the text color to be white against the blue background */
+    border-radius: 4px;  /* Optional: to give rounded corners to the background */
+}
+.panel-primary {
+    border: 2px solid #625e6b;  /* Using Bootstrap's primary color; adjust thickness, style, and color as needed */
+    border-radius: 5px;
+}
+
+.Interactive_graphs h4.panel-title3 {
+    width: 100%;
+    text-align: center;  /* This centers the text within the h5 element */
+    background-color: #625e6b;  /* This is Bootstrap's primary color; adjust as needed */
+    padding: 8px;  /* Add some padding to make it look better */
+    color: white;  /* Assuming you want the text color to be white against the blue background */
+    border-radius: 4px;  /* Optional: to give rounded corners to the background */
+}
+
+
+#applyButton {
+    position: relative; 
+    bottom: 0;
+    vertical-align: bottom;  /* Align to the bottom of its line */
+}
+
+#applyButton.btn-light-blue {
+    background-color: rgb(8, 164, 216);
+    border-color: lightblue;
+    color: black;
+}
+
+/* To ensure the color remains black even when hovered over or clicked */
+#applyButton.btn-light-blue:hover{
+    background-color: deepskyblue;  /* A bit darker shade of blue for the hover state */
+    border-color: deepskyblue;
+}
+
+#applyButton.btn-light-blue:active, 
+#applyButton.btn-light-blue:focus {
+    background-color: dodgerblue;  /* Even darker shade for active and focus states */
+    border-color: dodgerblue;
+    color: black;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#info {
+    background-color: #f5f6fa;
+    border-radius: 4px;
+    border: 1px solid #dcdde1;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#plot {
+    height: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.panel-body, .panel-body2 {
+    overflow: auto;
+}
